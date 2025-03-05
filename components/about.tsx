@@ -40,8 +40,8 @@ export default function About() {
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LinkedIn%20PFP-yBKrbVUuXhNDuIQRqgDFWSVWn5srU4.jpeg"
                 alt="Babinson Batala"
-                width={400}
-                height={400}
+                width={1000}
+                height={600}
                 quality={100}
                 className="object-cover transition-all duration-500 hover:scale-105"
                 priority
@@ -87,7 +87,7 @@ export default function About() {
                 className="w-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1GTg_ZsZLl7-8PSKErUj3jf-wGFsB8n2Q/view?usp=sharing",
+                    "https://drive.google.com/file/d/1uMA6zbMvh8HtKgX-4Tzgo_YprC1sGq8-/view?usp=sharing",
                     "_blank"
                   )
                 }

@@ -50,4 +50,3 @@ const FloatingActionButton = () => {
 }
 
 export default FloatingActionButton
-

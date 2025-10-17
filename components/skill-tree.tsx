@@ -87,4 +87,3 @@ const SkillTree: React.FC<{ skills: Skill[] }> = ({ skills }) => {
 }
 
 export default SkillTree
-

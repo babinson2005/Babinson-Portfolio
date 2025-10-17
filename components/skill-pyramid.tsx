@@ -52,4 +52,3 @@ const SkillPyramid: React.FC<{ skills: Skill[] }> = ({ skills }) => {
 }
 
 export default SkillPyramid
-

@@ -44,4 +44,3 @@ const RotatingCube = () => {
 }
 
 export default RotatingCube
-

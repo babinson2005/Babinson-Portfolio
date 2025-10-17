@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Code, Globe, Palette, GitBranch, BarChart2, Brain, Cloud } from "lucide-react"
+import { Code, Globe, Palette, GitBranch, BarChart2, Brain, Cloud, Database } from "lucide-react"
 
 export default function Skills() {
   const ref = useRef(null)
@@ -44,6 +44,12 @@ export default function Skills() {
       icon: <BarChart2 className="h-8 w-8" />,
       description: "Python, Pandas, Data Visualization, MATLAB",
       color: "from-cyan-500 to-blue-400",
+    },
+    {
+      name: "Database Management",
+      icon: <Database className="h-8 w-8" />,
+      description: "SQL, NoSQL, Database Design, Query Optimization",
+      color: "from-teal-500 to-cyan-400",
     },
     {
       name: "Machine Learning",
@@ -107,4 +113,3 @@ export default function Skills() {
     </section>
   )
 }
-

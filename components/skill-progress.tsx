@@ -29,4 +29,3 @@ const SkillProgress: React.FC<SkillProgressProps> = ({ skill, level }) => {
 }
 
 export default SkillProgress
-

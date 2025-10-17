@@ -41,7 +41,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold tracking-tighter mb-4">Get In Touch</h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-full mx-auto mb-6" />
+          <div className="w-20 h-1.5 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full mx-auto mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Feel free to reach out through any of these channels. I'd love to connect with you!
           </p>
@@ -57,10 +57,10 @@ export default function Contact() {
             >
               <Card className="h-full">
                 <CardContent className="flex flex-col items-center justify-center p-6 text-center h-full">
-                  <div className="p-3 rounded-full bg-violet-500/10 text-violet-600 mb-4">{info.icon}</div>
+                  <div className="p-3 rounded-full bg-green-500/10 text-green-600 mb-4">{info.icon}</div>
                   <h3 className="font-medium mb-2">{info.title}</h3>
                   {info.link ? (
-                    <a href={info.link} className="text-muted-foreground hover:text-violet-600 transition-colors">
+                    <a href={info.link} className="text-muted-foreground hover:text-green-600 transition-colors">
                       {info.value}
                     </a>
                   ) : (
@@ -83,7 +83,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full hover:bg-violet-500/10"
+              className="rounded-full hover:bg-green-500/10 bg-transparent"
               onClick={() => window.open("https://www.linkedin.com/in/babinson-batala-2051a7264/", "_blank")}
             >
               <Linkedin className="h-5 w-5" />
@@ -91,7 +91,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full hover:bg-violet-500/10"
+              className="rounded-full hover:bg-green-500/10 bg-transparent"
               onClick={() => window.open("https://github.com/babinson2005", "_blank")}
             >
               <Github className="h-5 w-5" />
@@ -99,7 +99,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full hover:bg-violet-500/10"
+              className="rounded-full hover:bg-green-500/10 bg-transparent"
               onClick={() => window.open("https://www.facebook.com/profile.php?id=100062752530703", "_blank")}
             >
               <Facebook className="h-5 w-5" />
@@ -107,7 +107,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full hover:bg-violet-500/10"
+              className="rounded-full hover:bg-green-500/10 bg-transparent"
               onClick={() => window.open("https://www.instagram.com/b0bby.batala/", "_blank")}
             >
               <Instagram className="h-5 w-5" />
@@ -115,7 +115,7 @@ export default function Contact() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full hover:bg-violet-500/10"
+              className="rounded-full hover:bg-green-500/10 bg-transparent"
               onClick={() => window.open("https://x.com/BobbyBatala", "_blank")}
             >
               <Twitter className="h-5 w-5" />
@@ -126,4 +126,3 @@ export default function Contact() {
     </section>
   )
 }
-

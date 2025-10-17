@@ -1,34 +1,34 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
+import { Menu, X } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   const navLinks = [
     { name: "Home", href: "#" },
@@ -36,21 +36,21 @@ export default function Navbar() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-  ];
+  ]
 
   const scrollToSection = (href: string) => {
     if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" })
     } else {
-      const element = document.querySelector(href);
+      const element = document.querySelector(href)
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth" })
       } else {
-        console.warn(`Element with selector "${href}" not found`);
+        console.warn(`Element with selector "${href}" not found`)
       }
     }
-    setIsMenuOpen(false);
-  };
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/80 backdrop-blur-sm shadow-sm">
@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-4">
           <Link
             href="#"
-            className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600"
+            className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-600"
           >
             Babinson Batala
           </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
             ))}
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white"
+              className="bg-gradient-to-r from-green-600 to-emerald-600 text-white"
             >
               Contact Me
             </Button>
@@ -84,18 +84,8 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu} aria-label="Toggle Menu">
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
@@ -120,7 +110,7 @@ export default function Navbar() {
             ))}
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white"
+              className="bg-gradient-to-r from-green-600 to-emerald-600 text-white"
             >
               Contact Me
             </Button>
@@ -131,5 +121,5 @@ export default function Navbar() {
         </motion.div>
       )}
     </header>
-  );
+  )
 }

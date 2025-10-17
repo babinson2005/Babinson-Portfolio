@@ -74,4 +74,3 @@ export default function ImageCarousel({ images, className = "" }: ImageCarouselP
     </div>
   )
 }
-

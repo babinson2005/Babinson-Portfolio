@@ -102,6 +102,52 @@ const PROJECTS: Project[] = [
     longDescription:
       "Arduino RC car with Bluetooth control and ultrasonic/IR sensors. Custom app and tuned motor performance.",
   },
+  {
+    id: 5,
+    title: "ReMastermind",
+    description:
+      "A retro-style code-breaking game inspired by the classic Mastermind board game with pixel art aesthetics.",
+    images: [
+      {
+        src: "/images/Remastered_HomeScreen.png",
+        alt: "ReMastermind main menu with difficulty selection",
+      },
+      {
+        src: "/images/Remastered_Difficulty.png",
+        alt: "ReMastermind difficulty selection screen",
+      },
+      {
+        src: "/images/Remastered_Gameplay.png",
+        alt: "ReMastermind game board with guess tracking",
+      },
+      {
+        src: "/images/Remastered_LoseScreen.png",
+        alt: "ReMastermind game over screen",
+      },
+      {
+        src: "/images/Remastered_Rules.png",
+        alt: "ReMastermind rules screen",
+      },
+      {
+        src: "/images/Remastered_Store.png",
+        alt: "ReMastermind store screen with rewards",
+      },
+      {
+        src: "/images/Remastered_Userinfo.png",
+        alt: "ReMastermind user information screen",
+      },
+      {
+        src: "/images/Remastered_Rankings.png",
+        alt: "ReMastermind rankings screen",
+      },
+    ],
+    category: "software",
+    tags: ["Game Development", "Python", "Pixel Art", "Mastermind"],
+    link: "#",
+    github: "#",
+    longDescription:
+      "Developed ReMastermind, a retro-inspired code-breaking game that recreates the classic Mastermind board game with modern features. The game features multiple difficulty levels (Easy, Medium, Hard), a scoring system with rewards, leaderboards, and a polished pixel art interface. Players have limited attempts to guess a 4-digit code using feedback indicators (correct position/color). The game includes challenges, an inventory system, and a store to unlock achievements and rewards based on performance.",
+  },
 ];
 
 export default function Projects() {
